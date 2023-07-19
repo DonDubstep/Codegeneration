@@ -14,4 +14,13 @@ pip install -r requirements.txt
 ```Python
 streamlit run main.py
 ```
+После запуска начнётся загрузка модели Incoder-1.3B с HuggingFace, после чего модель загрузится в RAM. При следующем запуске загрузка происходить не будет и модель будет загружаться в RAM.
 ## Пример работы
+Главная страница:  
+![Main](/pics/main.jpg)  
+
+Пример генерации кода и проверки кода:  
+![Generation example](/pics/generation_example.jpg)  
+
+Пример тестирования модели:  
+![Generation example](/pics/testing_example.jpg)
