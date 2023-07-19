@@ -6,9 +6,21 @@
 ```Python
 pip install -r requirements.txt
 ```
-Далее будет установлен torch==1.11.0 и cuda 113. Если вы не хотите использовать видеокарту, можете просто установить torch==1.11.0 и в файле settings.py выставить значение переменной CUDA = False.  
+
+Далее необходимо установить torch и cuda с помощью команды: 
+```Python
+pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu113
+```
+Так же будет необходимо установить cuda версии 11.3.0 отсюда: https://developer.nvidia.com/cuda-11.3.0-download-archive  
+
+Если вы не хотите использовать видеокарту, вместо этого введите команду 
+```Python
+pip install torch==1.11.0
+```
+и в файле settings.py выставите значение переменной CUDA = False.    
 Для дальнейшего тестирования запустите файл 
-`creator_dirs.py`. Он создаст директорию для записи сгенерированного кода.  
+`creator_dirs.py`. Он создаст директорию для записи сгенерированного кода.   
+
 Для запуска используйте команду  
   
 ```Python
